@@ -48,8 +48,19 @@ body {
     list-style-type: none;
 }
 
+
 #kuva {
     width: 6%;
     float: right;
     background:rgba(0,0,0,0.4);
+}
+
+.lomakekentta {
+    border-radius: 20px;
+    text-align: center;
+}
+
+.napit {
+    border-radius: 20px;
+    float: inherit;
 }
