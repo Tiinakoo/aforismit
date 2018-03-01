@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../static/css/tyyli.css" th:href="@{/css/tyyli.css}"/>
+    <title th:text="thymeleaf">Add quote</title>
+</head>
+<nav class="nav">
+    <ul>
+        <li><a href="starwars">Home</a></li>
+        <li><a href="sanonnat">Quotes</a></li>
+        <li><a href="lisaasanonta">Add quote</a></li>
+        <img id="kuva" src="https://www.screengeek.net/wp-content/uploads/2017/06/star-wars.png">
+
+    </ul>
+</nav>
+<body>
+<div class="kirjoitus">
+<form th:action="@{/sanonnat}" th:object="${lisaasanonta}" method="post">
+    <p>Name: <input type="text" th:field="*{nimi}"/></p>
+    <p>Quote: <input type="text" th:field="*{sanonta}"/></p>
+    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+</form>
+</div>
+</body>
+</html>

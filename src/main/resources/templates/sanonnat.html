@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../static/css/tyyli.css" th:href="@{/css/tyyli.css}"/>
+    <title th:text="thymeleaf">Quotes</title>
+</head>
+<nav class="nav">
+    <ul>
+        <li><a href="starwars">Home</a></li>
+        <li><a href="sanonnat">Quotes</a></li>
+        <li><a href="lisaasanonta">Add quote</a></li>
+        <img id="kuva" src="https://www.screengeek.net/wp-content/uploads/2017/06/star-wars.png">
+
+    </ul>
+</nav>
+<body>
+    <ul class="kirjoitus" th:each="lista : ${aforismilista.aforismit}">
+        <li class="sanonta" style="font-style: italic" th:text="${lista.sanonta}"/></br>
+        <li class="sanonta" th:text="${lista.nimi}"/>
+    </ul>
+    <a href="/lisaasanonta"></a>
+
+
+
+</body>
+</html>

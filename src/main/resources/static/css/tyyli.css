@@ -1,0 +1,55 @@
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    background:rgba(0,0,0,0.4);
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 20px;
+    text-align: justify;
+    padding: 16px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.nav li a:hover {
+    background-color: black;
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/14/16/40/monument-valley-1593318_1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.kirjoitus {
+    text-align: center;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+    margin: 20px 30% 0 30%;
+    border-radius: 20px;
+    background:rgba(0,0,0,0.4);
+    padding: 3%;
+}
+
+.sanonta {
+    list-style-type: none;
+}
+
+#kuva {
+    width: 6%;
+    float: right;
+    background:rgba(0,0,0,0.4);
+}
